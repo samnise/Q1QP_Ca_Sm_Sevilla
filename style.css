@@ -1,0 +1,264 @@
+/*fonts*/
+@font-face {font-family: 'shrikhand' ; src: url(fonts/Shrikhand-Regular.ttf);}
+@font-face {font-family: '04B_30__' ; src: url(fonts/04B_30__.TTF);}
+
+*{
+    padding:0;
+    margin:0;
+}
+body{/*website background*/
+    background-color: #ffbbd2;
+}
+#navbar{/*navbar (itself)*/
+    top: 0;
+    position: fixed;
+    padding: 10px;
+    height: 5vh;
+    width: 100vw;
+    background-color: #ff8bca;
+}
+#icon img{/*logo thingy*/
+    float: right;
+    height: 4vh;
+    border: 3px solid #ff8bca;
+    border-radius: 360px;
+    margin-right: 10vh;
+    box-shadow: black 3px 3px;
+}
+/*navbar links configurations*/
+#navbar #links{
+    display: inline;
+}
+#navbar #links a{
+    font-size: 1.5em;
+    font-family: 'shrikhand';
+    padding: .5vh;
+    margin-right: 2vh;
+    float: left;
+    text-decoration: none;
+    color: #963470;
+    text-shadow: black 1px 1px;
+}
+/*dropdown links configurations*/
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropdownbtn{
+    font-size: 1.5em;
+    font-family:'shrikhand'; 
+    padding: .5vh;
+    margin-right: 2vh;
+    border: none;
+    outline: none;
+    color: #963470;
+    background-color: inherit;
+    text-shadow: black 1px 1px;
+}
+.dropdown-content{
+    font-size: 1em;
+    display: none;
+    position: absolute;
+    width: 170px;
+    background-color: #ff8bca;
+}
+.dropdown-content a:hover {
+    background-color: #f82caa7a;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*banner*/
+#banner{
+    text-align: center;
+}
+.databan {
+    margin: 8.5vh;
+    margin-left: 5vh;
+}
+#banner .data{/*page 3 headers*/
+    font-family: '04B_30__';
+    color: #ff8bca;
+    font-size: 4em;
+    margin-top: 20vh;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px rgb(66, 1, 44);
+    text-align: center;
+}
+#banner .graphs{/*page 3 images*/
+    max-width: 100%;
+    height: auto;
+    margin-top: 5vh;
+}
+#banner p{/*descriptions for page 3 images*/
+    color: #b41e71;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+    font-size: 1.6em;
+    margin-top: 5vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+
+}
+#banner .conc{
+    color: #b41e71;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    text-align: center;
+}
+#banner .header{
+    color: #ff8bca;
+    font-size: 50px;
+    font-family: '04B_30__';
+    margin-top: 20vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px rgb(66, 1, 44);
+    text-align: center;
+}
+#banner .par{
+    color: #b41e71;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+    margin-top: 5vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+#banner .header2{
+    color:#ff8bca;
+    font-size: 50px;
+    font-family: '04B_30__';
+    margin-top: 15vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px rgb(66, 1, 44);
+    text-align: left;
+}
+#banner .par2{
+    color: #b41e71;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+    margin-top: -2vh;
+    margin-left: 20px;
+    margin-right: 60px;
+    text-align: left;
+}
+#banner .par2 span{
+    color: #ff8bca;
+    font-family: '04B_30__';
+    font-size: 1.2em;
+    margin-top: -2vh;
+    margin-right: 60px;
+    text-align: left;
+    text-shadow: 2px 2px rgb(66, 1, 44);
+}
+#banner ul li{
+    color: #b41e71;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3em;
+    margin-top: 1vh;
+    padding: -4px;
+    text-align: left;
+}
+#banner2 .header3{
+    color:#ff8bca;
+    font-size: 50px;
+    font-family: '04B_30__';
+    margin-top: 15vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px rgb(66, 1, 44);
+    text-align: center;
+}
+.table{/*table for data set*/
+    margin-left: 5vh;
+    margin-top: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 12vh;
+    column-gap: 2vw;
+    background-color: #ffbbd2;
+    padding: 2vh;
+    border-collapse: collapse;
+    border: 3px solid #963470;
+}
+th{
+    background-color: #ff8bca;
+    font-family: '04B_30__';
+    letter-spacing: 0.1vw;
+    font-size: 1.5em;
+    padding: 1vh;
+    color: #963470;
+    text-shadow: 1px 1px black;
+    border: 2px solid #963470;
+}
+tr:nth-child(even){
+    background-color: #ff8bca;
+}
+table td{
+    border: 2px solid #963470;
+    padding: 1vw;
+    border-spacing: 0px;
+    font-size: 1.5em;
+    color: #963470;
+    text-shadow: 1px 1px black;
+}
+#banner .About{
+    color:#ff8bca;
+    font-size: 50px;
+    font-family: '04B_30__';
+    margin-top: 15vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px rgb(66, 1, 44);
+    text-align: center;
+}
+#banner .aboutme{
+    max-width: 30%;
+    float: left;
+    height: auto;
+    margin-top: 2vh;
+    border-radius: 40px;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #ff8bca;
+    text-align: left;
+}
+#footer p{
+    font-family: 'shrikhand';
+    color: #963470;
+    font-size: 1.5em;
+    margin: 3vh;
+    text-shadow: black 1px 1px;
+}
+#footer .footerlinks{
+    display: block;
+    text-decoration: none;
+}
+#footer .footerlinks img{
+    height: 8vh;
+    float: right;
+    border-radius: 360px;
+    margin-top: -9vh;
+    margin-right: 1vh;
+}
+#footer .footerlinks .twitter{
+    margin-right: 20vh;
+}
+#footer .footerlinks .facebook{
+    margin-right: 13vh;
+}
+#footer .footerlinks .github{
+    margin-right: 6vh;
+}
